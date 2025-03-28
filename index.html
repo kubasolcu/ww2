@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Svetové války - Historický průvodce</title>
-    <meta name="description" content="Informace o 1. a 2. světové válce, bitvách, osobnostech a technologiích.">
-    <link rel="stylesheet" href="style.css"> <!-- Připojení CSS -->
+    <title>Světové války - Historický průvodce</title>
+    <meta name="description" content="Komplexní informace o 1. a 2. světové válce - bitvy, osobnosti, technika a historické souvislosti">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Hlavička stránky -->
-    <header>
-        <h1>Dějiny světových válek</h1>
-        <nav>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Dějiny světových válek</h1>
+            <p class="subtitle">Porozumění minulosti pro lepší budoucnost</p>
+        </div>
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Domů</a></li>
                 <li><a href="1svetova.html">1. světová válka</a></li>
@@ -23,28 +26,89 @@
     </header>
 
     <!-- Hlavní obsah -->
-    <main>
-        <section>
-            <h2>Úvod do světových válek</h2>
-            <p>Stránky věnované historii největších válečných konfliktů 20. století.</p>
+    <main class="container">
+        <section class="intro-section">
+            <h2>Úvod do problematiky světových válek</h2>
+            <div class="intro-content">
+                <p>Vítejte na vzdělávacím portálu věnovaném dvěma největším válečným konfliktům v dějinách lidstva. Světové války představují zásadní milníky moderních dějin, které navždy změnily politickou mapu světa, společnost i technologický pokrok.</p>
+                
+                <p>Na těchto stránkách najdete:</p>
+                <ul>
+                    <li>Podrobné analýzy příčin a důsledků obou konfliktů</li>
+                    <li>Popisy klíčových bitev a vojenských operací</li>
+                    <li>Medailonky významných osobností</li>
+                    <li>Vývoj vojenské techniky a technologií</li>
+                    <li>Autentické fotografie a dokumenty</li>
+                </ul>
+                
+                <blockquote>
+                    "Kdo nezná svou minulost, je odsouzen ji opakovat."<br>
+                    <cite>- George Santayana</cite>
+                </blockquote>
+            </div>
         </section>
 
-        <section>
-            <h2>1. světová válka (1914–1918)</h2>
-            <p>Informace o příčinách, průběhu a důsledcích války.</p>
-            <a href="1svetova.html">Více o 1. světové válce</a>
+        <section class="war-section">
+            <div class="war-card">
+                <h2>1. světová válka (1914–1918)</h2>
+                <img src="images/ww1-thumbnail.jpg" alt="Vojáci v zákopech během 1. světové války" class="war-image">
+                <div class="war-content">
+                    <p>První globální konflikt moderní éry, který si vyžádal životy více než 16 milionů lidí. Tato válka přinesla:</p>
+                    <ul>
+                        <li>Zákopovou válku na západní frontě</li>
+                        <li>První masové nasazení tanků a bojových plynů</li>
+                        <li>Rozpad čtyř velkých říší (Rakousko-Uhersko, Osmanská říše, Německo, Rusko)</li>
+                        <li>Vznik nových států včetně Československa</li>
+                    </ul>
+                    <a href="1svetova.html" class="btn">Prozkoumat 1. světovou válku</a>
+                </div>
+            </div>
+
+            <div class="war-card">
+                <h2>2. světová válka (1939–1945)</h2>
+                <img src="images/ww2-thumbnail.jpg" alt="Vojáci během vylodění v Normandii" class="war-image">
+                <div class="war-content">
+                    <p>Nejničivější konflikt v dějinách lidstva s 60-80 miliony obětí. Klíčové aspekty války:</p>
+                    <ul>
+                        <li>Holocaust a genocidy</li>
+                        <li>Válka v Tichomoří a Evropě</li>
+                        <li>Nasazení jaderných zbraní</li>
+                        <li>Vznik OSN a počátek studené války</li>
+                    </ul>
+                    <a href="2svetova.html" class="btn">Prozkoumat 2. světovou válku</a>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>2. světová válka (1939–1945)</h2>
-            <p>Klíčové bitvy, holocaust a významné osobnosti.</p>
-            <a href="2svetova.html">Více o 2. světové válce</a>
+        <section class="features-section">
+            <h2>Proč studovat světové války?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Historické ponaučení</h3>
+                    <p>Porozumění příčinám války nám pomáhá předcházet podobným konfliktům v budoucnosti.</p>
+                </div>
+                <div class="feature">
+                    <h3>Technologický pokrok</h3>
+                    <p>Válečné úsilí urychlilo rozvoj medicíny, letectví, elektroniky a dalších oborů.</p>
+                </div>
+                <div class="feature">
+                    <h3>Společenské změny</h3>
+                    <p>Války zásadně ovlivnily postavení žen, koloniální systémy a mezinárodní vztahy.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Patička stránky -->
-    <footer>
-        <p>&copy; 2024 Všechna práva vyhrazena | Vytvořeno pro vzdělávací účely</p>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Historický průvodce světovými válkami | Vytvořeno pro vzdělávací účely</p>
+            <p class="footer-links">
+                <a href="ochrana-udaju.html">Ochrana osobních údajů</a> | 
+                <a href="podminky.html">Podmínky užití</a> | 
+                <a href="kontakt.html">Kontaktujte nás</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
