@@ -34,3 +34,8 @@ nav a:hover {
     margin-top: 20px;
     border-radius: 10px;
 }
+ul {
+    list-style-type: none;
+    padding-left: 0; /* Optional: Removes default indentation */
+    margin: 0; /* Optional: Removes default margin */
+}
