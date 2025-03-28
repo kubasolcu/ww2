@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie | Světové války</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        .gallery-section {
+            margin-bottom: 40px;
+        }
+        .photo-caption {
+            text-align: center;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,17 +47,135 @@
     </header>
 
     <main>
-        <section>
+        <section class="gallery-intro">
             <h2>Fotografie z válečných let</h2>
+            <p>Prohlédněte si unikátní historické snímky zachycující klíčové momenty obou světových válek.</p>
+        </section>
+
+        <section class="gallery-section">
+            <h3>1. světová válka (1914-1918)</h3>
             <div class="gallery">
-                <img src="obrazky/verdun.jpg" alt="Bitva u Verdunu">
-                <img src="obrazky/normandie.jpg" alt="Vylodění v Normandii">
+                <figure>
+                    <img src="obrazky/verdun.jpg" alt="Bitva u Verdunu">
+                    <figcaption class="photo-caption">Bitva u Verdunu - nejdelší bitva 1. světové války</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/zakopy.jpg" alt="Život v zákopech">
+                    <figcaption class="photo-caption">Každodenní život vojáků v zákopech</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/tank.jpg" alt="První tanky">
+                    <figcaption class="photo-caption">Britský tank Mark I - první nasazení tanků v historii</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/letecke-souboje.jpg" alt="Letecké souboje">
+                    <figcaption class="photo-caption">Letecké souboje nad západní frontou</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/plyn.jpg" alt="Plynové útoky">
+                    <figcaption class="photo-caption">Plynové útoky - jedna z nejobávanějších zbraní</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/konec-valky.jpg" alt="Konec války">
+                    <figcaption class="photo-caption">Oslavy konce války 11.11.1918</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3>2. světová válka (1939-1945)</h3>
+            <div class="gallery">
+                <figure>
+                    <img src="obrazky/normandie.jpg" alt="Vylodění v Normandii">
+                    <figcaption class="photo-caption">Vylodění v Normandii - Den D, 6.6.1944</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/stalingrad.jpg" alt="Bitva o Stalingrad">
+                    <figcaption class="photo-caption">Bitva o Stalingrad - zlomový moment války</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/holocaust.jpg" alt="Osvobození koncentračního tábora">
+                    <figcaption class="photo-caption">Osvobození koncentračního tábora</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/pacific.jpg" alt="Válka v Tichomoří">
+                    <figcaption class="photo-caption">Bojové operace v Tichomoří</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/berlin.jpg" alt="Dobytí Berlína">
+                    <figcaption class="photo-caption">Sovětská vlajka nad Reichstagem, 1945</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/hiroshima.jpg" alt="Hirošima po atomovém výbuchu">
+                    <figcaption class="photo-caption">Hirošima po svržení atomové bomby</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3>Válečné osobnosti</h3>
+            <div class="gallery">
+                <figure>
+                    <img src="obrazky/churchill.jpg" alt="Winston Churchill">
+                    <figcaption class="photo-caption">Winston Churchill - britský premiér</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/hitler.jpg" alt="Adolf Hitler">
+                    <figcaption class="photo-caption">Adolf Hitler - vůdce nacistického Německa</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/patton.jpg" alt="Generál Patton">
+                    <figcaption class="photo-caption">Generál George S. Patton</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/rommel.jpg" alt="Polní maršál Rommel">
+                    <figcaption class="photo-caption">Polní maršál Erwin Rommel</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/zhukov.jpg" alt="Maršál Žukov">
+                    <figcaption class="photo-caption">Maršál Georgij Žukov</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/roosevelt.jpg" alt="Prezident Roosevelt">
+                    <figcaption class="photo-caption">Prezident Franklin D. Roosevelt</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3>Válečná technika</h3>
+            <div class="gallery">
+                <figure>
+                    <img src="obrazky/tiger-tank.jpg" alt="Německý tank Tiger">
+                    <figcaption class="photo-caption">Německý těžký tank Tiger I</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/mustang.jpg" alt="Stíhačka P-51 Mustang">
+                    <figcaption class="photo-caption">Americká stíhačka P-51 Mustang</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/b17.jpg" alt="Bombardér B-17">
+                    <figcaption class="photo-caption">Bombardér B-17 Flying Fortress</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/u-boat.jpg" alt="Německá ponorka">
+                    <figcaption class="photo-caption">Německá ponorka U-boot</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/katyusha.jpg" alt="Sovětská raketomet Katyusha">
+                    <figcaption class="photo-caption">Sovětský raketomet Katyusha</figcaption>
+                </figure>
+                <figure>
+                    <img src="obrazky/enigma.jpg" alt="Šifrovací stroj Enigma">
+                    <figcaption class="photo-caption">Německý šifrovací stroj Enigma</figcaption>
+                </figure>
             </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 | Vytvořeno pro vzdělávací účely</p>
+        <p>Fotografie pocházejí z veřejných archivů a jsou použity pro vzdělávací účely.</p>
     </footer>
 </body>
 </html>

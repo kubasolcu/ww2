@@ -143,6 +143,8 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+    color: red; /* Nastaví červenou barvu textu */
+    text-decoration: none; /* Odstraní podtržení */
 }
 
 /* Responsive Design */
