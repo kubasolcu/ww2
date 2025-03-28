@@ -162,3 +162,27 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.03);
+}
+.gallery-section {
+    margin-bottom: 40px;
+}
+.photo-caption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+}
