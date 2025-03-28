@@ -86,7 +86,7 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color:#333;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: var(--border-radius);
